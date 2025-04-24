@@ -1,3 +1,4 @@
 table {
-    
+    border: 2px solid rbg(140 140 140);
+    border-collapse:collapse;
 }
