@@ -1,4 +1,17 @@
-table {
-    border: 2px solid rbg(140 140 140);
+body {
+    font-family:Verdana;
+}
+table, tr, th{
+    border: 2px solid rgb(140 140 140);
+    background:beige;
     border-collapse:collapse;
+}
+thead {
+    background-color:black;
+}
+button {
+    padding:5px;
+    border-radius:5px;
+    font-size:20px;
+    background-color:beige;
 }
