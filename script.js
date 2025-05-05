@@ -1,20 +1,20 @@
-let a = 0;  // num of grades
-let b = 0; // num of studes
+let a = 4;  // num of grades
+let b = 4; // num of studes
 
-while (true) {
-    a = prompt("How many grades?");
-    if (!isNaN(+a) && +a != 0) {
-        break;
-    }
-    alert("Invalid Input or 0 as input");
-}
-while (true) {
-    b = prompt("How many students?");
-    if (!isNaN(+b) && +a != 0) {
-        break;
-    }
-    alert("Invalid Input or 0 as input");
-}
+// while (true) {
+//     a = prompt("How many grades?");
+//     if (!isNaN(+a) && +a != 0) {
+//         break;
+//     }
+//     alert("Invalid Input or 0 as input");
+// }
+// while (true) {
+//     b = prompt("How many students?");
+//     if (!isNaN(+b) && +b != 0) {
+//         break;
+//     }
+//     alert("Invalid Input or 0 as input");
+// }
 
 function createable(x,y) {
     var taa = document.getElementById("gradebook");
@@ -49,7 +49,7 @@ function createable(x,y) {
                     data.innerHTML = "<input type=\"text\">";
                     data.firstElementChild.setAttribute("style", "border-radius:3px;");
                 }
-                data.setAttribute("style", "border: 2px solid rgb(140 140 140); padding:5px; border-collapse:collapse; border-radius:5px;");
+                data.setAttribute("style", "padding:5px; border-collapse:collapse; border-radius:5px;");
                 ro.appendChild(data);
             }
         }
@@ -81,4 +81,9 @@ function calculate() {
         }
         avg[i].innerHTML = final;
     }
+}
+
+
+function animate() {
+    
 }

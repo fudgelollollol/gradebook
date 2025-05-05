@@ -1,17 +1,51 @@
 body {
     font-family:Verdana;
 }
-table, tr, th{
-    border: 2px solid rgb(140 140 140);
-    background:beige;
+table{
+    border: 2px solid rgb(126, 38, 38);
     border-collapse:collapse;
+    margin:5px;
 }
 thead {
-    background-color:black;
+    background-color:blue;
 }
 button {
+    margin: 5px;
     padding:5px;
     border-radius:5px;
     font-size:20px;
-    background-color:beige;
+    background-color:rgb(217, 163, 163);
 }
+input {
+    border:2px solid rgb(126, 38, 38);
+}
+header {
+    background-color: darkslateblue;
+}
+header h1 {
+    color:rgb(126, 38, 38);
+    display:inline-block;
+}
+body, html {
+    padding:0px;
+    margin:0px;
+}
+#animContainer {
+    font-size: 0px;
+    width:60px;
+    display:inline-block;
+    background:blue;
+}
+#animContainer div{
+    width:16px;
+    aspect-ratio: 4;
+    background:red;
+    display:inline-block;
+}
+.firsDiv {
+    margin:2px 0px 2px 5px;
+}
+.secoDiv {
+    margin:2px 5px 2px 0px;
+}
+
