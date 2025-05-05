@@ -92,5 +92,4 @@ function fontChange() {
         font = 0;
     }
 
-}   
-
+}
