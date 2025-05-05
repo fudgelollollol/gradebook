@@ -1,5 +1,21 @@
-body {
-    font-family:Verdana;
+@font-face {
+    font-family: bianzhidai-COLR;
+    src: url(assets/bianzhidai_COLR-back.otf);
+}
+@font-face {
+    font-family: mathigon;
+    src: url(assets/mathigon-notRegular.otf);
+}
+@font-face {
+    font-family: basteleur-BOLD;
+    src: url(assets/Basteleur-Bold.otf);
+}
+@font-face {
+    font-family: Inter;
+    src: url(assets/Inter-Regular.woff2);
+}
+body, html {
+    font-family:Inter;
 }
 table{
     border: 2px solid rgb(126, 38, 38);
@@ -18,29 +34,35 @@ button {
 }
 input {
     border:2px solid rgb(126, 38, 38);
+    font-family:"Comic Sans MS";
 }
 header {
-    background-color: darkslateblue;
+    background-color: #483d8b;
+    height:90px;
 }
 header h1 {
-    color:rgb(126, 38, 38);
+    color:rgb(87, 143, 177);
     display:inline-block;
+    -moz-user-select: none;
+    user-select:none;
 }
 body, html {
     padding:0px;
     margin:0px;
 }
 #animContainer {
+    margin:25px 10px;
     font-size: 0px;
-    width:60px;
+    width:42px;
     display:inline-block;
-    background:blue;
+    background:#403583;
 }
 #animContainer div{
     width:16px;
     aspect-ratio: 4;
-    background:red;
+    background:rgb(121, 201, 228);
     display:inline-block;
+    transition: 1s;
 }
 .firsDiv {
     margin:2px 0px 2px 5px;
@@ -48,4 +70,44 @@ body, html {
 .secoDiv {
     margin:2px 5px 2px 0px;
 }
+#animContainer:hover #a11 {
+    transform: scale(1.5, 0.5);
+    animation: spin 1.6s linear 1.25s forwards infinite;
+}
+#animContainer:hover #a21 {
+    transform: scale(1.5, 0.5);
+    animation: spin 1.3s linear 1.25s forwards infinite;
+}
+#animContainer:hover #a12 {
+    transform: rotate(90deg) scaleY(0.5);
+}
+#animContainer:hover #a22 {
+    transform: rotate(90deg) scaleY(0.5);
+}
+#animContainer:hover #a13 {
+    transform: rotate(90deg) scaleY(0.5);
+}
+#animContainer:hover #a23 {
+    transform: rotate(90deg) scaleY(0.5);
+}
+#animContainer:hover #a14 {
+    transform: scaleY(0.5);
+}
+#animContainer:hover #a24 {
+    transform: scaleY(0.5);
+}
 
+
+@keyframes spin {
+    0% {
+        transform:rotate(0deg) scale(1.5, 0.5);
+    }
+    100%{
+        transform: rotate(360deg) scale(1.5, 0.5);
+    }
+}
+
+footer {
+    font-size:10px;
+    margin:100px 0 0 0;
+}

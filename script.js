@@ -1,20 +1,20 @@
 let a = 4;  // num of grades
 let b = 4; // num of studes
 
-// while (true) {
-//     a = prompt("How many grades?");
-//     if (!isNaN(+a) && +a != 0) {
-//         break;
-//     }
-//     alert("Invalid Input or 0 as input");
-// }
-// while (true) {
-//     b = prompt("How many students?");
-//     if (!isNaN(+b) && +b != 0) {
-//         break;
-//     }
-//     alert("Invalid Input or 0 as input");
-// }
+while (true) {
+    a = prompt("How many grades?");
+    if (!isNaN(+a) && +a != 0) {
+        break;
+    }
+    alert("Invalid Input or 0 as input");
+}
+while (true) {
+    b = prompt("How many students?");
+    if (!isNaN(+b) && +b != 0) {
+        break;
+    }
+    alert("Invalid Input or 0 as input");
+}
 
 function createable(x,y) {
     var taa = document.getElementById("gradebook");
@@ -83,7 +83,14 @@ function calculate() {
     }
 }
 
+let font = 0;
+let fontList = ["bianzhidai-COLR", "mathigon", "basteleur-BOLD", "Inter"];
+function fontChange() {
+    document.getElementById("changing").style.fontFamily=fontList[font];
+    font++;
+    if (font > 3) {
+        font = 0;
+    }
 
-function animate() {
-    
-}
+}   
+
